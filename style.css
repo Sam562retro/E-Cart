@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    width: 100%;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    margin-left: 50px;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links ul li img {
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+#cart {
+    display: none;
+}
+
+.submenu:hover #cart {
+    display: block;
+    position: absolute;
+    min-height: 400px;
+    min-width: 300px;
+    background-color: orange;
+    right: 50px;
+}
+
+#listCart {
+    display: flex;
+    justify-content: center;
+}
+
+#listCart thead {
+    display: flex;
+    width: 100%;
+}
+
+#listCart thead tr {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#emptyCart {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.coursesContainer {
+    display: flex;
+    text-align: center;
+}
+
+.courseCard {
+    display: block;
+    background-color: yellow;
+    border: solid 2px yellow;
+    border-radius: 20px;
+    width: 280px;
+    height: 370px;
+    text-align: center;
+    padding: 5px;
+    margin: 30px;
+}
+
+.coursePic {
+    border-radius: 20px;
+    height: 200px;
+    width: 280px;
+}
+
+.titleCard {
+    font-size: 20px;
+    font-weight: 900;
+    color: #002687;
+}
+
+.description {
+    font-size: 15px;
+    color: #00a6ff;
+    padding: 2px;
+}
+
+.rating {
+    color: #facba7;
+    padding: 5px;
+}
+
+.SP,
+.MRP {
+    font-size: 18px;
+}
+
+.addCart {
+    display: block;
+    background-color: green;
+    color: white;
+    border: solid 2px green;
+    border-radius: 20px;
+    height: 20px;
+    text-decoration: none;
+    padding: 5px;
+}
