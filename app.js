@@ -30,7 +30,7 @@ function readData(course) {
     const courseInfo = {
         image: course.querySelector('img').src,
         title: course.querySelector('h4').textContent,
-        price: course.querySelector('p').textContent,
+        price: course.querySelector('.SP').textContent,
         id: course.querySelector('a').getAttribute('data-id')
     };
     insertCart(courseInfo);
@@ -72,7 +72,7 @@ function getCoursesLS() {
     if (localStorage.getItem('courses') === null) {
         coursesLs = [];
     } else {
-        coursesLs = JSON.parse(localStorage.getItem('coursesLs'));
+        coursesLs = JSON.parse(localStorage.getItem('courses'));
     }
     return coursesLs;
 }

@@ -43,14 +43,16 @@ nav {
 .submenu:hover #cart {
     display: block;
     position: absolute;
-    min-height: 400px;
+    height: 500px;
     min-width: 300px;
     background-color: orange;
-    right: 50px;
+    right: 0;
+    overflow-x: scroll;
 }
 
 #listCart {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -77,11 +79,6 @@ nav {
     color: white;
     text-decoration: none;
     margin: 20px;
-}
-
-.coursesContainer {
-    display: flex;
-    text-align: center;
 }
 
 .courseCard {
@@ -133,4 +130,51 @@ nav {
     height: 20px;
     text-decoration: none;
     padding: 5px;
+}
+
+#listCourses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coursesContainer {
+    display: flex;
+    width: 90%;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+#listCart tbody tr {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+#listCart tbody tr td {
+    text-align: center;
+    width: 80px;
+}
+
+#listCart tbody tr td img {
+    text-align: center;
+    width: 100%;
+}
+
+.cross {
+    width: 50px;
+}
+
+.deleteCourseBtn {
+    text-decoration: none;
+    color: white;
+    display: block;
+    background-color: red;
+    border: solid 2px red;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
 }
